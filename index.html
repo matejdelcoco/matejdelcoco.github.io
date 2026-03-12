@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Matej Del Coco | Data Science Portfolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="brand">Matej Del Coco</div>
+
+            <button class="hamburger" onclick="toggleMenu()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a onclick="navigate('home')" class="active-link" id="link-home"
+                    >Home</a
+                >
+                <a onclick="navigate('experience')" id="link-experience"
+                    >Education & Experience</a
+                >
+                <a onclick="navigate('projects')" id="link-projects"
+                    >Projects & Hackathons</a
+                >
+            </div>
+        </nav>
+
+        <div class="container">
+            <section id="home" class="active">
+                <div class="hero">
+                    <h1>
+                        <i>Without data</i>, you are just another person with an
+                        opinion.
+                    </h1>
+                    <p>
+                        <strong>— W. Edwards Deming</strong><br /><br />
+                        Currently pursuing a Master's degree at Politecnico di
+                        Torino. I have a strong passion for algorithms, machine
+                        learning, and problem-solving, applying new technologies
+                        to tackle complex challenges.
+                    </p>
+
+                    <div class="btn-group">
+                        <a
+                            onclick="navigate('projects')"
+                            class="btn btn-primary"
+                            >Explore Projects</a
+                        >
+                        <a href="mailto:delcocomatej@gmail.com" class="btn"
+                            >Contact Me</a
+                        >
+                    </div>
+
+                    <div style="margin-top: 3rem">
+                        <span class="tech-title">Core Technology Stack</span>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">HTML/CSS</span>
+                            <span class="tag">Svelte</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2 class="section-header">Education & Experience</h2>
+
+                <div class="exp-item">
+                    <div class="exp-num">01</div>
+                    <div class="exp-details">
+                        <h3>Master's in Data Science and Engineering</h3>
+                        <p>Politecnico di Torino</p>
+                    </div>
+                    <div class="exp-date">2025 — Present</div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-num">02</div>
+                    <div class="exp-details">
+                        <h3>Bachelor's in Computer Science</h3>
+                        <p>Università degli Studi di Trento</p>
+                    </div>
+                    <div class="exp-date">2022 — 2025</div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-num">03</div>
+                    <div class="exp-details">
+                        <h3>Communications Team</h3>
+                        <p>E-Agle Trento Racing Team</p>
+                    </div>
+                    <div class="exp-date">2022 — 2024</div>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-num">04</div>
+                    <div class="exp-details">
+                        <h3>Social Media Manager</h3>
+                        <p>VirgoSites</p>
+                    </div>
+                    <div class="exp-date">2022 — 2023</div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2 class="section-header">Projects & Hackathons</h2>
+
+                <div class="project-item">
+                    <span class="project-label"
+                        >Machine Learning & Web Dev</span
+                    >
+                    <h3>Briscola RL Arena: AI vs Human</h3>
+                    <p>
+                        Developed a complete Reinforcement Learning environment
+                        to master the Italian card game Briscola. Trained a Deep
+                        Recurrent Q-Network (DRQN) with self-play and a PPO
+                        agent to handle imperfect information, combining them
+                        into a powerful Ensemble model. Finally, I built a
+                        custom web interface powered by a FastAPI backend to let
+                        human players challenge the AI directly from the
+                        browser.
+                    </p>
+
+                    <div class="project-footer">
+                        <div class="tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">Reinforcement Learning</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a
+                            href="https://github.com/tuousername"
+                            target="_blank"
+                            class="github-link"
+                            aria-label="View source on GitHub"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <button
+                        class="btn btn-primary try-game-btn"
+                        onclick="toggleGame(this)"
+                    >
+                        Try the Game 🎮
+                    </button>
+
+                    <div class="game-wrapper" id="briscola-game-wrapper">
+                        <button
+                            class="fullscreen-btn"
+                            onclick="toggleFullscreen()"
+                            title="Toggle Fullscreen"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <polyline points="9 21 3 21 3 15"></polyline>
+                                <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+                        </button>
+                        <iframe
+                            src="briscola/index.html"
+                            frameborder="0"
+                            scrolling="no"
+                        ></iframe>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <span class="project-label"
+                        >Data Engineering & Research</span
+                    >
+                    <h3>Process Mining Data Optimization</h3>
+                    <p>
+                        Developed a Python tool to automatically convert manual
+                        video annotations into standard event logs, and designed
+                        novel trace alignment algorithms to optimize data for
+                        Predictive Process Monitoring models.
+                    </p>
+
+                    <div class="project-footer">
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">Process Mining</span>
+                        </div>
+                        <a
+                            href="#"
+                            target="_blank"
+                            class="github-link"
+                            aria-label="View source on GitHub"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <span class="project-label">SFSCON Hackathon Winner</span>
+                    <h3>SupaCharging</h3>
+                    <p>
+                        Developed SupaCharging, a mobile app to help users find
+                        electric vehicle charging stations. The project
+                        demonstrated proficiency in teamwork and web
+                        development.
+                    </p>
+
+                    <div class="project-footer">
+                        <div class="tags">
+                            <span class="tag">Hackathon</span>
+                            <span class="tag">Web Development</span>
+                        </div>
+                        <a
+                            href="https://github.com/Gioppix/supa-charging"
+                            target="_blank"
+                            class="github-link"
+                            aria-label="View source on GitHub"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <span class="project-label">SFSCON Hackathon Winner</span>
+                    <h3>SupaCamping</h3>
+                    <p>
+                        Created SupaCamping, a full-stack web application for
+                        campsite management. Project involved implementing
+                        user-friendly interfaces and back-end development.
+                    </p>
+
+                    <div class="project-footer">
+                        <div class="tags">
+                            <span class="tag">Full-Stack</span>
+                            <span class="tag">UI/UX</span>
+                        </div>
+                        <a
+                            href="https://github.com/yourusername/supacamping"
+                            target="_blank"
+                            class="github-link"
+                            aria-label="View source on GitHub"
+                        >
+                            <svg
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div
+            id="fullscreen-backdrop"
+            onclick="toggleFullscreen()"
+            style="cursor: pointer"
+        ></div>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

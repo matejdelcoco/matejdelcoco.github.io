@@ -3,7 +3,27 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Matej Del Coco | Data Science Portfolio</title>
+        <title>Matej Del Coco | Portfolio</title>
+
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="assets/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="assets/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="assets/favicon-16x16.png"
+        />
+        <link rel="shortcut icon" href="assets/favicon.ico" />
+        <link rel="manifest" href="assets/site.webmanifest" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +36,7 @@
     </head>
     <body>
         <nav>
-            <div class="brand">Matej Del Coco</div>
+            <div class="brand" onclick="navigate('home')">Matej Del Coco</div>
 
             <button class="hamburger" onclick="toggleMenu()">
                 <span class="hamburger-line"></span>
@@ -174,6 +194,7 @@
                             title="Toggle Fullscreen"
                         >
                             <svg
+                                class="icon-expand"
                                 viewBox="0 0 24 24"
                                 fill="none"
                                 stroke="currentColor"
@@ -184,6 +205,21 @@
                                 <polyline points="15 3 21 3 21 9"></polyline>
                                 <polyline points="9 21 3 21 3 15"></polyline>
                                 <line x1="21" y1="3" x2="14" y2="10"></line>
+                                <line x1="3" y1="21" x2="10" y2="14"></line>
+                            </svg>
+
+                            <svg
+                                class="icon-compress"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <polyline points="4 14 10 14 10 20"></polyline>
+                                <polyline points="20 10 14 10 14 4"></polyline>
+                                <line x1="14" y1="10" x2="21" y2="3"></line>
                                 <line x1="3" y1="21" x2="10" y2="14"></line>
                             </svg>
                         </button>

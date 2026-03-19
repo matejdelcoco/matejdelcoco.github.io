@@ -28,6 +28,16 @@ body.game-fullscreen-active {
     overflow: hidden;
 }
 
+::selection {
+    background-color: rgba(65, 123, 90, 0.3);
+    /* color: var(--text-main); */
+}
+
+::-moz-selection {
+    background-color: rgba(65, 123, 90, 0.3);
+    /* color: var(--bg-color); */
+}
+
 nav,
 .btn,
 .tag,
@@ -379,6 +389,18 @@ h3 {
     stroke: white;
     width: 22px;
     height: 22px;
+}
+
+.icon-compress {
+    display: none;
+}
+
+.game-wrapper.fullscreen .icon-expand {
+    display: none;
+}
+
+.game-wrapper.fullscreen .icon-compress {
+    display: block;
 }
 
 /* Sfondo Sfocato (attivato dal JS) */
